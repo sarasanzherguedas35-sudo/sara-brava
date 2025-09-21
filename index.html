@@ -1,0 +1,25 @@
+<script type="importmap">
+  {
+    "imports": {
+      "@google/genai": "https://esm.sh/@google/genai@^1.4.0"
+    }
+  }
+</script>
+<h1>Veo - Video Generation</h1>
+<p>Use this template to test Veo model capabilities. Swap out the model name in the code editor.</p>
+<p><textarea id="prompt-input" type="text" placeholder="Enter a prompt"></textarea></p>
+<p>Provide a conditioning image if the model supports it.</p>
+<p><input id="file-input" type="file" accept="image/*" /></p>
+<img alt="Condition image" id="img" />
+<button id="generate-button">Generate</button>
+<div id="error-modal" class="modal-overlay">
+  <div class="modal-content">
+    <div id="error-message-container"></div>
+    <div class="modal-actions">
+      <button id="modal-add-key-button">Add API Key</button>
+      <button id="modal-close-button">Close</button>
+    </div>
+  </div>
+</div>
+<video id="video" autoplay loop controls></video>
+<p id="status">Ready.</p>
